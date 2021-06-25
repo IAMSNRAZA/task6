@@ -1,0 +1,16 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Number:</strong>
+  <%= @table.number %>
+</p>
+
+<tbody>
+  <% for i in 1..12 %>
+    <%= mult=@table.number*i %>
+    <tr>
+    <td><%= puts "#{@table.number} * #{i} = #{mult}" %></td>
+    </tr>
+  <% end %>
+</tbody>
+
